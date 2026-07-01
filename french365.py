@@ -78,21 +78,21 @@ WORD_OVERRIDES = {
     "avion": ("noun", "plane", "Nous prenons l'avion pour aller en Espagne."),
     "vélo": ("noun", "bicycle / bike", "Je vais au travail en vélo."),
     "métro": ("noun", "metro / subway", "Le métro est rapide à Paris."),
-    "être": ("verb", "to be", "Je veux être médecin."),
-    "avoir": ("verb", "to have", "J'ai deux soeurs et un frère."),
-    "faire": ("verb", "to do / to make", "Qu'est-ce que tu fais ce soir?"),
-    "aller": ("verb", "to go", "Je vais à l'école à pied."),
-    "venir": ("verb", "to come", "Tu viens avec moi au cinéma?"),
-    "voir": ("verb", "to see", "Je vois mes amis le week-end."),
-    "savoir": ("verb", "to know (a fact)", "Je sais parler français."),
-    "pouvoir": ("verb", "to be able to / can", "Je peux t'aider si tu veux."),
-    "vouloir": ("verb", "to want", "Je veux un café, s'il vous plaît."),
-    "parler": ("verb", "to speak / to talk", "Je parle français et anglais."),
-    "manger": ("verb", "to eat", "Nous mangeons à midi."),
-    "boire": ("verb", "to drink", "Il boit de l'eau après le sport."),
-    "dormir": ("verb", "to sleep", "Je dors huit heures par nuit."),
-    "travailler": ("verb", "to work", "Elle travaille dans un hôpital."),
-    "habiter": ("verb", "to live (in a place)", "J'habite à Chennai en Inde."),
+    "être": ("verb", "to be", "Être heureux, c'est l'essentiel dans la vie.", "je suis, tu es, il/elle est, nous sommes, vous êtes, ils sont"),
+    "avoir": ("verb", "to have", "Avoir un ami fidèle, c'est une chance.", "j'ai, tu as, il/elle a, nous avons, vous avez, ils ont"),
+    "faire": ("verb", "to do / to make", "Faire du sport est bon pour la santé.", "je fais, tu fais, il/elle fait, nous faisons, vous faites, ils font"),
+    "aller": ("verb", "to go", "Aller à l'école à pied est agréable.", "je vais, tu vas, il/elle va, nous allons, vous allez, ils vont"),
+    "venir": ("verb", "to come", "Venir en France, c'est mon rêve.", "je viens, tu viens, il/elle vient, nous venons, vous venez, ils viennent"),
+    "voir": ("verb", "to see", "Voir ses amis le week-end, c'est important.", "je vois, tu vois, il/elle voit, nous voyons, vous voyez, ils voient"),
+    "savoir": ("verb", "to know (a fact)", "Savoir parler français est très utile.", "je sais, tu sais, il/elle sait, nous savons, vous savez, ils savent"),
+    "pouvoir": ("verb", "to be able to / can", "Pouvoir aider ses amis, c'est formidable.", "je peux, tu peux, il/elle peut, nous pouvons, vous pouvez, ils peuvent"),
+    "vouloir": ("verb", "to want", "Vouloir apprendre le français, c'est une bonne idée.", "je veux, tu veux, il/elle veut, nous voulons, vous voulez, ils veulent"),
+    "parler": ("verb", "to speak / to talk", "Parler français avec des amis est très amusant.", "je parle, tu parles, il/elle parle, nous parlons, vous parlez, ils parlent"),
+    "manger": ("verb", "to eat", "Manger des légumes est bon pour la santé.", "je mange, tu manges, il/elle mange, nous mangeons, vous mangez, ils mangent"),
+    "boire": ("verb", "to drink", "Boire de l'eau régulièrement est essentiel.", "je bois, tu bois, il/elle boit, nous buvons, vous buvez, ils boivent"),
+    "dormir": ("verb", "to sleep", "Dormir huit heures par nuit est recommandé.", "je dors, tu dors, il/elle dort, nous dormons, vous dormez, ils dorment"),
+    "travailler": ("verb", "to work", "Travailler dans un hôpital est un métier noble.", "je travaille, tu travailles, il/elle travaille, nous travaillons, vous travaillez, ils travaillent"),
+    "habiter": ("verb", "to live (in a place)", "Habiter en France est mon objectif.", "j'habite, tu habites, il/elle habite, nous habitons, vous habitez, ils habitent"),
     "grand": ("adjective", "big / tall", "C'est un grand appartement."),
     "petit": ("adjective", "small / little", "J'ai un petit chien."),
     "bon": ("adjective", "good", "Ce restaurant est très bon."),
@@ -147,17 +147,17 @@ WORD_OVERRIDES = {
     "assez": ("adverb", "enough / quite", "J'ai assez mangé, merci."),
     "très": ("adverb", "very", "Ce film est très intéressant."),
     "trop": ("adverb", "too much / too many", "Il fait trop chaud aujourd'hui."),
-    "aimer": ("verb", "to like / to love", "J'aime beaucoup la musique française."),
-    "prendre": ("verb", "to take", "Je prends le bus pour aller au travail."),
-    "donner": ("verb", "to give", "Il donne un cadeau à sa mère."),
-    "mettre": ("verb", "to put / to place", "Mets ton manteau, il fait froid."),
-    "partir": ("verb", "to leave / to go away", "Je pars à huit heures du matin."),
-    "arriver": ("verb", "to arrive", "Le train arrive à midi."),
-    "ouvrir": ("verb", "to open", "Ouvre la fenêtre, il fait chaud."),
-    "fermer": ("verb", "to close / to shut", "Ferme la porte derrière toi."),
-    "chercher": ("verb", "to look for / to search", "Je cherche mon téléphone."),
-    "trouver": ("verb", "to find", "J'ai trouvé mes clés!"),
-    "appeler": ("verb", "to call", "Je vais appeler ma mère ce soir."),
+    "aimer": ("verb", "to like / to love", "Aimer la musique française, c'est très naturel.", "j'aime, tu aimes, il/elle aime, nous aimons, vous aimez, ils aiment"),
+    "prendre": ("verb", "to take", "Prendre le bus est pratique en ville.", "je prends, tu prends, il/elle prend, nous prenons, vous prenez, ils prennent"),
+    "donner": ("verb", "to give", "Donner un cadeau à un ami, c'est généreux.", "je donne, tu donnes, il/elle donne, nous donnons, vous donnez, ils donnent"),
+    "mettre": ("verb", "to put / to place", "Mettre un manteau quand il fait froid est important.", "je mets, tu mets, il/elle met, nous mettons, vous mettez, ils mettent"),
+    "partir": ("verb", "to leave / to go away", "Partir en vacances en été, c'est agréable.", "je pars, tu pars, il/elle part, nous partons, vous partez, ils partent"),
+    "arriver": ("verb", "to arrive", "Arriver à l'heure est une question de respect.", "j'arrive, tu arrives, il/elle arrive, nous arrivons, vous arrivez, ils arrivent"),
+    "ouvrir": ("verb", "to open", "Ouvrir la fenêtre quand il fait chaud est une bonne idée.", "j'ouvre, tu ouvres, il/elle ouvre, nous ouvrons, vous ouvrez, ils ouvrent"),
+    "fermer": ("verb", "to close / to shut", "Fermer la porte avant de dormir est important.", "je ferme, tu fermes, il/elle ferme, nous fermons, vous fermez, ils ferment"),
+    "chercher": ("verb", "to look for / to search", "Chercher ses clés le matin est stressant.", "je cherche, tu cherches, il/elle cherche, nous cherchons, vous cherchez, ils cherchent"),
+    "trouver": ("verb", "to find", "Trouver un bon restaurant à Paris est facile.", "je trouve, tu trouves, il/elle trouve, nous trouvons, vous trouvez, ils trouvent"),
+    "appeler": ("verb", "to call", "Appeler sa famille le week-end est une bonne habitude.", "j'appelle, tu appelles, il/elle appelle, nous appelons, vous appelez, ils appellent"),
     "jardin": ("noun", "garden", "Les enfants jouent dans le jardin."),
     "parc": ("noun", "park", "Nous nous promenons dans le parc."),
     "marché": ("noun", "market", "J'achète des légumes au marché."),
@@ -217,9 +217,9 @@ WORD_OVERRIDES = {
     "derrière": ("preposition", "behind / at the back", "Le jardin est derrière la maison."),
     "dedans": ("adverb", "inside", "Il fait chaud dedans."),
     "dehors": ("adverb", "outside", "Les enfants jouent dehors."),
-    "lire": ("verb", "to read", "J'aime lire des livres le week-end."),
-    "écrire": ("verb", "to write", "Il écrit une lettre à son ami."),
-    "écouter": ("verb", "to listen", "J'écoute de la musique en travaillant."),
+    "lire": ("verb", "to read", "Lire un livre en français chaque jour aide à progresser.", "je lis, tu lis, il/elle lit, nous lisons, vous lisez, ils lisent"),
+    "écrire": ("verb", "to write", "Écrire une lettre à un ami est un geste touchant.", "j'écris, tu écris, il/elle écrit, nous écrivons, vous écrivez, ils écrivent"),
+    "écouter": ("verb", "to listen", "Écouter de la musique française aide à apprendre la langue.", "j'écoute, tu écoutes, il/elle écoute, nous écoutons, vous écoutez, ils écoutent"),
 }
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -235,12 +235,15 @@ def get_daily_word(max_attempts=10):
         attempted.add(word)
 
         if word in WORD_OVERRIDES:
-            pos, translation, example = WORD_OVERRIDES[word]
+            entry = WORD_OVERRIDES[word]
+            pos, translation, example = entry[0], entry[1], entry[2]
+            conjugation = entry[3] if len(entry) == 4 else None
             return {
                 "word": word,
                 "part_of_speech": pos,
                 "translation": translation,
                 "example": example,
+                "conjugation": conjugation,
             }
 
     return None
@@ -255,6 +258,8 @@ def build_word_card_text(details):
         lines.append(f"Part of speech : {details['part_of_speech']}")
     lines.append(f"Translation    : {details['translation']}")
     lines.append(f"Example        : \"{details['example']}\"")
+    if details.get("conjugation"):
+        lines.append(f"Conjugation    : {details['conjugation']}")
     lines.append("=" * 50)
     return "\n".join(lines)
 
@@ -300,6 +305,12 @@ def build_word_card_html(details):
         <a href="{pronounce_example_url}" style="font-size:13px; color:#4338ca; text-decoration:none;">
           &#128266; Hear the example
         </a>
+        {f'''<div style="margin-top:16px; background:#f0fdf4; border-left:3px solid #22c55e;
+                        padding:10px 14px; border-radius:4px;">
+          <p style="margin:0; font-size:13px; color:#166534; line-height:1.6;">
+            <strong>Conjugation</strong><br>{details["conjugation"]}
+          </p>
+        </div>''' if details.get("conjugation") else ""}
       </div>
       <div style="background:#f9fafb; padding:14px 28px; text-align:center;">
         <p style="margin:0; font-size:12px; color:#9ca3af;">
