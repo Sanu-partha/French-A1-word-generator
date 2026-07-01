@@ -35,44 +35,194 @@ FRENCH_A1_WORDS = [
     "lire", "écrire", "écouter",
 ]
 
-WORD_OVERRIDES = {}
+WORD_OVERRIDES = {
+    "bonjour": ("interjection", "hello / good morning", "Bonjour, comment allez-vous?"),
+    "bonsoir": ("interjection", "good evening", "Bonsoir, je suis content de vous voir."),
+    "merci": ("interjection", "thank you", "Merci beaucoup pour votre aide."),
+    "pardon": ("interjection", "sorry / excuse me", "Pardon, je ne comprends pas."),
+    "homme": ("noun", "man", "L'homme travaille dans un bureau."),
+    "femme": ("noun", "woman / wife", "La femme lit un livre intéressant."),
+    "enfant": ("noun", "child", "L'enfant joue dans le jardin."),
+    "ami": ("noun", "friend", "Mon ami habite à Paris."),
+    "famille": ("noun", "family", "Ma famille est grande et heureuse."),
+    "père": ("noun", "father", "Mon père travaille tous les jours."),
+    "mère": ("noun", "mother", "Ma mère fait la cuisine le soir."),
+    "frère": ("noun", "brother", "Mon frère a quinze ans."),
+    "soeur": ("noun", "sister", "Ma soeur habite à Lyon."),
+    "maison": ("noun", "house / home", "La maison est grande et confortable."),
+    "école": ("noun", "school", "Les enfants vont à l'école le matin."),
+    "ville": ("noun", "city / town", "Paris est une belle ville."),
+    "rue": ("noun", "street", "La boulangerie est dans cette rue."),
+    "pays": ("noun", "country", "La France est un grand pays."),
+    "restaurant": ("noun", "restaurant", "Nous mangeons au restaurant ce soir."),
+    "magasin": ("noun", "shop / store", "Le magasin est ouvert jusqu'à vingt heures."),
+    "jour": ("noun", "day", "Il fait beau aujourd'hui, c'est un bon jour."),
+    "nuit": ("noun", "night", "La nuit, il fait froid."),
+    "matin": ("noun", "morning", "Je bois du café le matin."),
+    "soir": ("noun", "evening", "Nous regardons la télévision le soir."),
+    "semaine": ("noun", "week", "Je travaille cinq jours par semaine."),
+    "mois": ("noun", "month", "Juillet est mon mois préféré."),
+    "année": ("noun", "year", "Cette année, je visite la France."),
+    "heure": ("noun", "hour / time", "Il est trois heures de l'après-midi."),
+    "eau": ("noun", "water", "Je bois de l'eau tous les jours."),
+    "pain": ("noun", "bread", "J'achète du pain à la boulangerie."),
+    "café": ("noun", "coffee / café", "Je prends un café le matin."),
+    "lait": ("noun", "milk", "Les enfants boivent du lait."),
+    "fruit": ("noun", "fruit", "Je mange un fruit après le repas."),
+    "légume": ("noun", "vegetable", "Les légumes sont bons pour la santé."),
+    "viande": ("noun", "meat", "Il mange de la viande deux fois par semaine."),
+    "repas": ("noun", "meal", "Le repas de famille est important en France."),
+    "voiture": ("noun", "car", "Ma voiture est rouge."),
+    "train": ("noun", "train", "Je prends le train pour aller à Paris."),
+    "bus": ("noun", "bus", "Le bus arrive dans cinq minutes."),
+    "avion": ("noun", "plane", "Nous prenons l'avion pour aller en Espagne."),
+    "vélo": ("noun", "bicycle / bike", "Je vais au travail en vélo."),
+    "métro": ("noun", "metro / subway", "Le métro est rapide à Paris."),
+    "être": ("verb", "to be", "Je veux être médecin."),
+    "avoir": ("verb", "to have", "J'ai deux soeurs et un frère."),
+    "faire": ("verb", "to do / to make", "Qu'est-ce que tu fais ce soir?"),
+    "aller": ("verb", "to go", "Je vais à l'école à pied."),
+    "venir": ("verb", "to come", "Tu viens avec moi au cinéma?"),
+    "voir": ("verb", "to see", "Je vois mes amis le week-end."),
+    "savoir": ("verb", "to know (a fact)", "Je sais parler français."),
+    "pouvoir": ("verb", "to be able to / can", "Je peux t'aider si tu veux."),
+    "vouloir": ("verb", "to want", "Je veux un café, s'il vous plaît."),
+    "parler": ("verb", "to speak / to talk", "Je parle français et anglais."),
+    "manger": ("verb", "to eat", "Nous mangeons à midi."),
+    "boire": ("verb", "to drink", "Il boit de l'eau après le sport."),
+    "dormir": ("verb", "to sleep", "Je dors huit heures par nuit."),
+    "travailler": ("verb", "to work", "Elle travaille dans un hôpital."),
+    "habiter": ("verb", "to live (in a place)", "J'habite à Chennai en Inde."),
+    "grand": ("adjective", "big / tall", "C'est un grand appartement."),
+    "petit": ("adjective", "small / little", "J'ai un petit chien."),
+    "bon": ("adjective", "good", "Ce restaurant est très bon."),
+    "mauvais": ("adjective", "bad", "Il fait mauvais temps aujourd'hui."),
+    "beau": ("adjective", "beautiful / handsome", "C'est un beau pays."),
+    "nouveau": ("adjective", "new", "J'ai un nouveau téléphone."),
+    "vieux": ("adjective", "old", "Cette maison est très vieille."),
+    "jeune": ("adjective", "young", "Elle est jeune et dynamique."),
+    "chaud": ("adjective", "hot / warm", "Il fait chaud en été."),
+    "froid": ("adjective", "cold", "L'hiver est très froid ici."),
+    "facile": ("adjective", "easy", "Cet exercice est facile."),
+    "difficile": ("adjective", "difficult", "Le français n'est pas difficile."),
+    "important": ("adjective", "important", "C'est une décision importante."),
+    "possible": ("adjective", "possible", "Est-ce que c'est possible?"),
+    "livre": ("noun", "book", "Je lis un livre intéressant."),
+    "table": ("noun", "table", "Les assiettes sont sur la table."),
+    "chaise": ("noun", "chair", "Il y a quatre chaises dans la cuisine."),
+    "porte": ("noun", "door", "Ferme la porte, s'il te plaît."),
+    "fenêtre": ("noun", "window", "La fenêtre est ouverte."),
+    "chambre": ("noun", "bedroom / room", "Ma chambre est au premier étage."),
+    "cuisine": ("noun", "kitchen / cooking", "La cuisine française est délicieuse."),
+    "argent": ("noun", "money / silver", "Je n'ai pas beaucoup d'argent."),
+    "travail": ("noun", "work / job", "Mon travail est intéressant."),
+    "temps": ("noun", "time / weather", "Je n'ai pas le temps aujourd'hui."),
+    "vie": ("noun", "life", "La vie à Paris est très agréable."),
+    "monde": ("noun", "world / people", "Il y a beaucoup de monde ici."),
+    "chose": ("noun", "thing", "J'ai une chose importante à te dire."),
+    "question": ("noun", "question", "J'ai une question pour vous."),
+    "rouge": ("adjective", "red", "Elle porte une robe rouge."),
+    "bleu": ("adjective", "blue", "Le ciel est bleu aujourd'hui."),
+    "vert": ("adjective", "green", "Les arbres sont verts au printemps."),
+    "blanc": ("adjective", "white", "Il neige, tout est blanc."),
+    "noir": ("adjective", "black", "Le chat est noir."),
+    "jaune": ("adjective", "yellow", "Le soleil est jaune."),
+    "soleil": ("noun", "sun", "Le soleil brille aujourd'hui."),
+    "pluie": ("noun", "rain", "La pluie tombe depuis ce matin."),
+    "vent": ("noun", "wind", "Il y a beaucoup de vent aujourd'hui."),
+    "neige": ("noun", "snow", "Les enfants jouent dans la neige."),
+    "tête": ("noun", "head", "J'ai mal à la tête."),
+    "main": ("noun", "hand", "Elle porte un livre dans la main."),
+    "pied": ("noun", "foot", "Je vais au travail à pied."),
+    "bouche": ("noun", "mouth", "Ouvre la bouche, s'il te plaît."),
+    "prix": ("noun", "price / prize", "Quel est le prix de ce livre?"),
+    "billet": ("noun", "ticket / note (money)", "J'achète un billet de train."),
+    "carte": ("noun", "card / map / menu", "Je paye par carte bancaire."),
+    "téléphone": ("noun", "telephone / phone", "Mon téléphone est sur la table."),
+    "ordinateur": ("noun", "computer", "Je travaille sur mon ordinateur."),
+    "lettre": ("noun", "letter", "J'écris une lettre à mes parents."),
+    "nombre": ("noun", "number", "Quel est ton nombre préféré?"),
+    "beaucoup": ("adverb", "a lot / many / much", "Il y a beaucoup de gens ici."),
+    "peu": ("adverb", "a little / few", "Je parle un peu français."),
+    "assez": ("adverb", "enough / quite", "J'ai assez mangé, merci."),
+    "très": ("adverb", "very", "Ce film est très intéressant."),
+    "trop": ("adverb", "too much / too many", "Il fait trop chaud aujourd'hui."),
+    "aimer": ("verb", "to like / to love", "J'aime beaucoup la musique française."),
+    "prendre": ("verb", "to take", "Je prends le bus pour aller au travail."),
+    "donner": ("verb", "to give", "Il donne un cadeau à sa mère."),
+    "mettre": ("verb", "to put / to place", "Mets ton manteau, il fait froid."),
+    "partir": ("verb", "to leave / to go away", "Je pars à huit heures du matin."),
+    "arriver": ("verb", "to arrive", "Le train arrive à midi."),
+    "ouvrir": ("verb", "to open", "Ouvre la fenêtre, il fait chaud."),
+    "fermer": ("verb", "to close / to shut", "Ferme la porte derrière toi."),
+    "chercher": ("verb", "to look for / to search", "Je cherche mon téléphone."),
+    "trouver": ("verb", "to find", "J'ai trouvé mes clés!"),
+    "appeler": ("verb", "to call", "Je vais appeler ma mère ce soir."),
+    "jardin": ("noun", "garden", "Les enfants jouent dans le jardin."),
+    "parc": ("noun", "park", "Nous nous promenons dans le parc."),
+    "marché": ("noun", "market", "J'achète des légumes au marché."),
+    "hôpital": ("noun", "hospital", "Il travaille dans un hôpital."),
+    "pharmacie": ("noun", "pharmacy / chemist", "Je vais à la pharmacie acheter des médicaments."),
+    "banque": ("noun", "bank", "Je vais à la banque retirer de l'argent."),
+    "poste": ("noun", "post office / post", "J'envoie une lettre à la poste."),
+    "église": ("noun", "church", "L'église est au centre du village."),
+    "musée": ("noun", "museum", "Nous visitons le musée ce week-end."),
+    "plage": ("noun", "beach", "Nous allons à la plage en été."),
+    "montagne": ("noun", "mountain", "J'aime faire du ski à la montagne."),
+    "forêt": ("noun", "forest", "Nous nous promenons dans la forêt."),
+    "rivière": ("noun", "river", "La rivière passe près de notre maison."),
+    "lac": ("noun", "lake", "Nous nageons dans le lac en été."),
+    "chien": ("noun", "dog", "Mon chien s'appelle Rex."),
+    "chat": ("noun", "cat", "Le chat dort sur le canapé."),
+    "oiseau": ("noun", "bird", "L'oiseau chante dans le jardin."),
+    "poisson": ("noun", "fish", "Je mange du poisson le vendredi."),
+    "fleur": ("noun", "flower", "Il offre des fleurs à sa femme."),
+    "arbre": ("noun", "tree", "Il y a un grand arbre dans le jardin."),
+    "herbe": ("noun", "grass / herb", "L'herbe est verte après la pluie."),
+    "assiette": ("noun", "plate / dish", "L'assiette est dans le lave-vaisselle."),
+    "verre": ("noun", "glass", "Je bois un verre d'eau."),
+    "fourchette": ("noun", "fork", "La fourchette est à gauche de l'assiette."),
+    "couteau": ("noun", "knife", "Le couteau est très tranchant."),
+    "cuillère": ("noun", "spoon", "Je prends une cuillère de sucre."),
+    "sac": ("noun", "bag", "Je mets mes affaires dans mon sac."),
+    "chapeau": ("noun", "hat", "Il porte un chapeau en été."),
+    "chaussure": ("noun", "shoe", "Ces chaussures sont très confortables."),
+    "robe": ("noun", "dress", "Elle porte une belle robe rouge."),
+    "pantalon": ("noun", "trousers / pants", "Il met son pantalon bleu."),
+    "chemise": ("noun", "shirt", "Il porte une chemise blanche."),
+    "manteau": ("noun", "coat", "Je mets mon manteau car il fait froid."),
+    "lunettes": ("noun", "glasses / spectacles", "Je porte des lunettes pour lire."),
+    "montre": ("noun", "watch", "Ma montre indique trois heures."),
+    "clé": ("noun", "key", "J'ai oublié ma clé à la maison."),
+    "stylo": ("noun", "pen", "Je prends un stylo pour écrire."),
+    "papier": ("noun", "paper", "J'écris sur une feuille de papier."),
+    "crayon": ("noun", "pencil", "Les enfants dessinent avec un crayon."),
+    "cahier": ("noun", "notebook / exercise book", "J'écris mes notes dans mon cahier."),
+    "image": ("noun", "picture / image", "Il y a une belle image sur le mur."),
+    "musique": ("noun", "music", "J'écoute de la musique le soir."),
+    "film": ("noun", "film / movie", "Nous regardons un film ce soir."),
+    "sport": ("noun", "sport", "Je fais du sport trois fois par semaine."),
+    "jeu": ("noun", "game", "Les enfants jouent à un jeu de société."),
+    "vacances": ("noun", "holidays / vacation", "Nous partons en vacances en août."),
+    "cadeau": ("noun", "gift / present", "J'offre un cadeau à mon ami."),
+    "fête": ("noun", "party / celebration / festival", "Nous faisons une fête pour son anniversaire."),
+    "anniversaire": ("noun", "birthday / anniversary", "C'est mon anniversaire aujourd'hui."),
+    "couleur": ("noun", "colour", "Quelle est ta couleur préférée?"),
+    "forme": ("noun", "shape / form", "Ce gâteau a une forme ronde."),
+    "taille": ("noun", "size / height / waist", "Quelle est ta taille?"),
+    "poids": ("noun", "weight", "Quel est le poids de ce colis?"),
+    "gauche": ("adjective/adverb", "left", "Tournez à gauche au carrefour."),
+    "droite": ("adjective/adverb", "right", "La banque est à droite."),
+    "devant": ("preposition", "in front of / ahead", "Il attend devant la porte."),
+    "derrière": ("preposition", "behind / at the back", "Le jardin est derrière la maison."),
+    "dedans": ("adverb", "inside", "Il fait chaud dedans."),
+    "dehors": ("adverb", "outside", "Les enfants jouent dehors."),
+    "lire": ("verb", "to read", "J'aime lire des livres le week-end."),
+    "écrire": ("verb", "to write", "Il écrit une lettre à son ami."),
+    "écouter": ("verb", "to listen", "J'écoute de la musique en travaillant."),
+}
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-
-
-def fetch_url(url):
-    request = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(request, timeout=10) as response:
-        return json.loads(response.read().decode())
-
-
-def fetch_french_example(word):
-    url = f"https://api.dictionaryapi.dev/api/v2/entries/fr/{word}"
-    try:
-        data = fetch_url(url)
-        for meaning_block in data[0].get("meanings", []):
-            for definition in meaning_block.get("definitions", []):
-                example = definition.get("example")
-                if example:
-                    return example
-        return None
-    except Exception:
-        return None
-
-
-def fetch_english_translation(word):
-    url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
-    try:
-        data = fetch_url(url)
-        for meaning_block in data[0].get("meanings", []):
-            block_pos = meaning_block.get("partOfSpeech", "")
-            for definition in meaning_block.get("definitions", []):
-                meaning = definition.get("definition")
-                if meaning:
-                    return meaning, block_pos
-        return None, ""
-    except Exception:
-        return None, ""
 
 
 def get_daily_word(max_attempts=10):
@@ -85,20 +235,10 @@ def get_daily_word(max_attempts=10):
         attempted.add(word)
 
         if word in WORD_OVERRIDES:
-            override = WORD_OVERRIDES[word]
+            pos, translation, example = WORD_OVERRIDES[word]
             return {
                 "word": word,
-                "part_of_speech": override.get("part_of_speech", ""),
-                "translation": override.get("translation"),
-                "example": override.get("example"),
-            }
-
-        translation, part_of_speech = fetch_english_translation(word)
-        if translation:
-            example = fetch_french_example(word)
-            return {
-                "word": word,
-                "part_of_speech": part_of_speech,
+                "part_of_speech": pos,
                 "translation": translation,
                 "example": example,
             }
@@ -114,23 +254,12 @@ def build_word_card_text(details):
     if details["part_of_speech"]:
         lines.append(f"Part of speech : {details['part_of_speech']}")
     lines.append(f"Translation    : {details['translation']}")
-    if details["example"]:
-        lines.append(f"Example        : \"{details['example']}\"")
-    else:
-        lines.append(f"Example        : Try using \"{details['word']}\" in a French sentence today!")
+    lines.append(f"Example        : \"{details['example']}\"")
     lines.append("=" * 50)
     return "\n".join(lines)
 
 
 def build_word_card_html(details):
-    example_html = (
-        f'<p style="margin:0 0 6px 0;"><strong>Example</strong><br>'
-        f'<em>"{details["example"]}"</em></p>'
-        if details["example"]
-        else f'<p style="margin:0 0 6px 0; color:#888;"><strong>Example</strong><br>'
-             f'Try using "{details["word"]}" in a French sentence today!</p>'
-    )
-
     pos_html = (
         f'<span style="display:inline-block; background:#eef2ff; color:#4338ca; '
         f'font-size:12px; font-weight:600; padding:4px 10px; border-radius:12px; '
@@ -147,7 +276,7 @@ def build_word_card_html(details):
         <p style="margin:0; color:#ffffff; font-size:13px; letter-spacing:1px; text-transform:uppercase;">
           Mot du Jour &mdash; French Word of the Day
         </p>
-        <h1 style="margin:6px 0 0 0; color:#ffffff; font-size:32px; font-weight:700;">
+        <h1 style="margin:6px 0 6px 0; color:#ffffff; font-size:32px; font-weight:700;">
           {details['word'].capitalize()}
         </h1>
         {pos_html}
@@ -156,9 +285,9 @@ def build_word_card_html(details):
         <p style="margin:0 0 16px 0; font-size:15px; color:#1f2937; line-height:1.5;">
           <strong>English Translation</strong><br>{details['translation']}
         </p>
-        <div style="font-size:15px; color:#1f2937; line-height:1.5; margin-bottom:16px;">
-          {example_html}
-        </div>
+        <p style="margin:0; font-size:15px; color:#1f2937; line-height:1.5;">
+          <strong>Example</strong><br><em>"{details['example']}"</em>
+        </p>
       </div>
       <div style="background:#f9fafb; padding:14px 28px; text-align:center;">
         <p style="margin:0; font-size:12px; color:#9ca3af;">
@@ -206,4 +335,4 @@ if __name__ == "__main__":
             send_email(subject, plain_body, html_body)
             print("Email sent successfully.")
     else:
-        print("Could not fetch a word today — check your internet connection and try again.")
+        print("Could not select a word today. Please check the word list.")
