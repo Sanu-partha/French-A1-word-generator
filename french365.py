@@ -260,6 +260,11 @@ def build_word_card_text(details):
 
 
 def build_word_card_html(details):
+    word_encoded = details['word'].replace(' ', '%20')
+    example_encoded = details['example'].replace(' ', '%20')
+    pronounce_word_url = f"https://translate.google.com/?sl=fr&tl=en&text={word_encoded}&op=translate"
+    pronounce_example_url = f"https://translate.google.com/?sl=fr&tl=en&text={example_encoded}&op=translate"
+
     pos_html = (
         f'<span style="display:inline-block; background:#eef2ff; color:#4338ca; '
         f'font-size:12px; font-weight:600; padding:4px 10px; border-radius:12px; '
@@ -280,14 +285,21 @@ def build_word_card_html(details):
           {details['word'].capitalize()}
         </h1>
         {pos_html}
+        <a href="{pronounce_word_url}" style="display:inline-block; margin-top:10px;
+           color:#ffffff; font-size:13px; text-decoration:none; opacity:0.9;">
+          &#128266; Hear it pronounced
+        </a>
       </div>
       <div style="padding:24px 28px;">
         <p style="margin:0 0 16px 0; font-size:15px; color:#1f2937; line-height:1.5;">
           <strong>English Translation</strong><br>{details['translation']}
         </p>
-        <p style="margin:0; font-size:15px; color:#1f2937; line-height:1.5;">
+        <p style="margin:0 0 8px 0; font-size:15px; color:#1f2937; line-height:1.5;">
           <strong>Example</strong><br><em>"{details['example']}"</em>
         </p>
+        <a href="{pronounce_example_url}" style="font-size:13px; color:#4338ca; text-decoration:none;">
+          &#128266; Hear the example
+        </a>
       </div>
       <div style="background:#f9fafb; padding:14px 28px; text-align:center;">
         <p style="margin:0; font-size:12px; color:#9ca3af;">
